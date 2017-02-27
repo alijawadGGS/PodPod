@@ -1,0 +1,6 @@
+use_frameworks!
+target 'NabuPod_Tests' do
+  pod 'NabuPod', :path => '../'
+  
+  
+end
