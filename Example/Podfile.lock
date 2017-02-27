@@ -1,0 +1,16 @@
+PODS:
+  - NabuPod (0.1.0)
+
+DEPENDENCIES:
+  - NabuPod (from `../`)
+
+EXTERNAL SOURCES:
+  NabuPod:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NabuPod: 9f3bece743d4eb396c8fdcd73bc2f58b079d0830
+
+PODFILE CHECKSUM: e95e2640dcd40940c56d184c216de0e4e61026ea
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2195D351A3A1CF1A50D1B8FE6685A748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		21F353F7D434541B154CDEC40F17DF7B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4850DB0607270CDDA19FD1205DBF7BD /* ReplaceMe.swift */; };
+		2D582FFACEBF7810708CF46078802BBD /* Pods-NabuPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD733B8AB59313ADA056246D67F79610 /* Pods-NabuPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		802EF29E8884D01D73FF096B96B92BFA /* Pods-NabuPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4585934C53EB2BF3CC510539DA66C55 /* Pods-NabuPod_Tests-dummy.m */; };
+		98F623A8C1F6D5C00628EA5F0095FF01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EE3977B38FE707F0CA112B6CBB38D /* NabuPod-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0342AC49E58DA3BA568B9974E485ADA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30A10592CC5B29A59BEEF0252C6C593;
+			remoteInfo = NabuPod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F36AA1FBA8D953480EB4BF025BAD1F6 /* Pods-NabuPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NabuPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		49F36A9ABDA49B3C99E7422B6C4276BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5340F416341482619EC1ECA57B09B699 /* Pods-NabuPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NabuPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B120490292D391E4413A4D90AABFCFB /* NabuPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NabuPod.modulemap; sourceTree = "<group>"; };
+		6101C0A9D4807D4A8AB97F618DC99027 /* NabuPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NabuPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656EE3977B38FE707F0CA112B6CBB38D /* NabuPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NabuPod-dummy.m"; sourceTree = "<group>"; };
+		6CBDC05D97868C7B2542AA28A4E6ABAA /* NabuPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NabuPod-prefix.pch"; sourceTree = "<group>"; };
+		760D5EE176C8B551387DDA10BB64BDED /* Pods_NabuPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NabuPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8228E99F8813B13DF28C593766779543 /* Pods-NabuPod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NabuPod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8258AC654B72E279CFE278AE14703348 /* Pods-NabuPod_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NabuPod_Tests.modulemap"; sourceTree = "<group>"; };
+		82C5C702979F80C5A1C8DA44286078D8 /* Pods-NabuPod_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NabuPod_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		8F11FF86042374080783BCDF9EFB06EF /* NabuPod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NabuPod.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8A6B177A10504C176EE0F6ED34E9CF3 /* Pods-NabuPod_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NabuPod_Tests-resources.sh"; sourceTree = "<group>"; };
+		B28360078B22A8ACCB3DA25425DC25EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4585934C53EB2BF3CC510539DA66C55 /* Pods-NabuPod_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NabuPod_Tests-dummy.m"; sourceTree = "<group>"; };
+		BD733B8AB59313ADA056246D67F79610 /* Pods-NabuPod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NabuPod_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BEBFDFF9CCCA05B64395B7FD2A233E50 /* Pods-NabuPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NabuPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C4850DB0607270CDDA19FD1205DBF7BD /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NabuPod-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66E5A55E40D6568F0C77FBF4A7009F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2195D351A3A1CF1A50D1B8FE6685A748 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1A0ACA854263D576DAC339F0826A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F623A8C1F6D5C00628EA5F0095FF01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ED4FE5662E36A1D0702CC6958504BE7 /* NabuPod */ = {
+			isa = PBXGroup;
+			children = (
+				7C871A055E7C96CD2B81A9B99D320F51 /* NabuPod */,
+				33C3AA6DA0E5D6DCB05419FA7944BCEC /* Support Files */,
+			);
+			name = NabuPod;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		16DCFFC29467FAF375DD3A5419F07AFB /* Pods-NabuPod_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49F36A9ABDA49B3C99E7422B6C4276BB /* Info.plist */,
+				8258AC654B72E279CFE278AE14703348 /* Pods-NabuPod_Tests.modulemap */,
+				8228E99F8813B13DF28C593766779543 /* Pods-NabuPod_Tests-acknowledgements.markdown */,
+				5340F416341482619EC1ECA57B09B699 /* Pods-NabuPod_Tests-acknowledgements.plist */,
+				B4585934C53EB2BF3CC510539DA66C55 /* Pods-NabuPod_Tests-dummy.m */,
+				82C5C702979F80C5A1C8DA44286078D8 /* Pods-NabuPod_Tests-frameworks.sh */,
+				A8A6B177A10504C176EE0F6ED34E9CF3 /* Pods-NabuPod_Tests-resources.sh */,
+				BD733B8AB59313ADA056246D67F79610 /* Pods-NabuPod_Tests-umbrella.h */,
+				0F36AA1FBA8D953480EB4BF025BAD1F6 /* Pods-NabuPod_Tests.debug.xcconfig */,
+				BEBFDFF9CCCA05B64395B7FD2A233E50 /* Pods-NabuPod_Tests.release.xcconfig */,
+			);
+			name = "Pods-NabuPod_Tests";
+			path = "Target Support Files/Pods-NabuPod_Tests";
+			sourceTree = "<group>";
+		};
+		33C3AA6DA0E5D6DCB05419FA7944BCEC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B28360078B22A8ACCB3DA25425DC25EB /* Info.plist */,
+				5B120490292D391E4413A4D90AABFCFB /* NabuPod.modulemap */,
+				8F11FF86042374080783BCDF9EFB06EF /* NabuPod.xcconfig */,
+				656EE3977B38FE707F0CA112B6CBB38D /* NabuPod-dummy.m */,
+				6CBDC05D97868C7B2542AA28A4E6ABAA /* NabuPod-prefix.pch */,
+				E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NabuPod";
+			sourceTree = "<group>";
+		};
+		3C131500A85343A2F578AAC640BCADCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6101C0A9D4807D4A8AB97F618DC99027 /* NabuPod.framework */,
+				760D5EE176C8B551387DDA10BB64BDED /* Pods_NabuPod_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6EE1972C1175DF62D71E5AD09571200D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ED4FE5662E36A1D0702CC6958504BE7 /* NabuPod */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7C871A055E7C96CD2B81A9B99D320F51 /* NabuPod */ = {
+			isa = PBXGroup;
+			children = (
+				DC47F2C101366208A7AEDF0617CB825D /* Classes */,
+			);
+			path = NabuPod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6EE1972C1175DF62D71E5AD09571200D /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3C131500A85343A2F578AAC640BCADCF /* Products */,
+				9ED34A8E2B3272762EEA340C3E464632 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9ED34A8E2B3272762EEA340C3E464632 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16DCFFC29467FAF375DD3A5419F07AFB /* Pods-NabuPod_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC47F2C101366208A7AEDF0617CB825D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C4850DB0607270CDDA19FD1205DBF7BD /* ReplaceMe.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		553AD31EC82330D3AB57CF3ECA8FE7F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D1CD3DB53D99D478D444EFAB0F7695 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D582FFACEBF7810708CF46078802BBD /* Pods-NabuPod_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		46BEB59B44C8C1EF5658B3A684A7088E /* Pods-NabuPod_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB6A59DC71D189CDF3A688BA8E41065 /* Build configuration list for PBXNativeTarget "Pods-NabuPod_Tests" */;
+			buildPhases = (
+				743DA18BE6084824957DD5CBE5D9A897 /* Sources */,
+				66E5A55E40D6568F0C77FBF4A7009F36 /* Frameworks */,
+				59D1CD3DB53D99D478D444EFAB0F7695 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE4575AB258CB6B10C49387302AD8806 /* PBXTargetDependency */,
+			);
+			name = "Pods-NabuPod_Tests";
+			productName = "Pods-NabuPod_Tests";
+			productReference = 760D5EE176C8B551387DDA10BB64BDED /* Pods_NabuPod_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D30A10592CC5B29A59BEEF0252C6C593 /* NabuPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77CCE7388644836A04FABB79F2CB7AC5 /* Build configuration list for PBXNativeTarget "NabuPod" */;
+			buildPhases = (
+				CBEE39E53BC681E3E3D9EC7F54EEFF9E /* Sources */,
+				CE1A0ACA854263D576DAC339F0826A73 /* Frameworks */,
+				553AD31EC82330D3AB57CF3ECA8FE7F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NabuPod;
+			productName = NabuPod;
+			productReference = 6101C0A9D4807D4A8AB97F618DC99027 /* NabuPod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3C131500A85343A2F578AAC640BCADCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D30A10592CC5B29A59BEEF0252C6C593 /* NabuPod */,
+				46BEB59B44C8C1EF5658B3A684A7088E /* Pods-NabuPod_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		743DA18BE6084824957DD5CBE5D9A897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802EF29E8884D01D73FF096B96B92BFA /* Pods-NabuPod_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEE39E53BC681E3E3D9EC7F54EEFF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */,
+				21F353F7D434541B154CDEC40F17DF7B /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE4575AB258CB6B10C49387302AD8806 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NabuPod;
+			target = D30A10592CC5B29A59BEEF0252C6C593 /* NabuPod */;
+			targetProxy = 0342AC49E58DA3BA568B9974E485ADA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		001EF5697704EB7596979A37328B74DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F11FF86042374080783BCDF9EFB06EF /* NabuPod.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NabuPod/NabuPod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NabuPod/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NabuPod/NabuPod.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NabuPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B9AA690874CC84BA93A5882B6ACFA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBFDFF9CCCA05B64395B7FD2A233E50 /* Pods-NabuPod_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NabuPod_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NabuPod_Tests/Pods-NabuPod_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NabuPod_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		535EE8D774693E4876C6721C3D30426D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F11FF86042374080783BCDF9EFB06EF /* NabuPod.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NabuPod/NabuPod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NabuPod/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NabuPod/NabuPod.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NabuPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		99521461CB86242A06DA5E11271AF739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F36AA1FBA8D953480EB4BF025BAD1F6 /* Pods-NabuPod_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NabuPod_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NabuPod_Tests/Pods-NabuPod_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NabuPod_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77CCE7388644836A04FABB79F2CB7AC5 /* Build configuration list for PBXNativeTarget "NabuPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001EF5697704EB7596979A37328B74DC /* Debug */,
+				535EE8D774693E4876C6721C3D30426D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB6A59DC71D189CDF3A688BA8E41065 /* Build configuration list for PBXNativeTarget "Pods-NabuPod_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99521461CB86242A06DA5E11271AF739 /* Debug */,
+				1B9AA690874CC84BA93A5882B6ACFA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

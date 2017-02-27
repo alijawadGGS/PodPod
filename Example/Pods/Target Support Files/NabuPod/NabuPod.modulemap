@@ -1,0 +1,6 @@
+framework module NabuPod {
+  umbrella header "NabuPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
