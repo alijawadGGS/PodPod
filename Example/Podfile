@@ -1,6 +1,7 @@
 use_frameworks!
 target 'NabuPod_Tests' do
   pod 'NabuPod', :path => '../'
-  
+    pod 'UICKeyChainStore'
+
   
 end
