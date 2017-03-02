@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		BBED73077DFE7169B1DE50FB /* Pods_NabuPod_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF9F080031835817DCB6357 /* Pods_NabuPod_Tests.framework */; };
+		F1A4D0B91E68423300A6C6F7 /* TemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A4D0B81E68423300A6C6F7 /* TemClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		7CA6F88797ABB59BA8753BB1 /* Pods-NabuPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NabuPod_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NabuPod_Tests/Pods-NabuPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C2F5CC3B909275BAB547A758 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D6EA0A11ECAE447CEAEF2F3E /* NabuPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NabuPod.podspec; path = ../NabuPod.podspec; sourceTree = "<group>"; };
+		F1A4D0B81E68423300A6C6F7 /* TemClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemClass.swift; sourceTree = "<group>"; };
 		FFF9F080031835817DCB6357 /* Pods_NabuPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NabuPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,6 +48,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				F1A4D0B81E68423300A6C6F7 /* TemClass.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				F1A4D0B91E68423300A6C6F7 /* TemClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
