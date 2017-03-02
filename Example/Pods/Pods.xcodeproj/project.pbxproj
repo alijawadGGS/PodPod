@@ -14,6 +14,7 @@
 		98F623A8C1F6D5C00628EA5F0095FF01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EE3977B38FE707F0CA112B6CBB38D /* NabuPod-dummy.m */; };
+		F1771D521E689910005CF998 /* NabuPodDataManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */,
+				F1771D521E689910005CF998 /* NabuPodDataManager.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
