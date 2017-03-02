@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2195D351A3A1CF1A50D1B8FE6685A748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		21F353F7D434541B154CDEC40F17DF7B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4850DB0607270CDDA19FD1205DBF7BD /* ReplaceMe.swift */; };
+		21F353F7D434541B154CDEC40F17DF7B /* NabuPodDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */; };
 		2D582FFACEBF7810708CF46078802BBD /* Pods-NabuPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD733B8AB59313ADA056246D67F79610 /* Pods-NabuPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		802EF29E8884D01D73FF096B96B92BFA /* Pods-NabuPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4585934C53EB2BF3CC510539DA66C55 /* Pods-NabuPod_Tests-dummy.m */; };
 		98F623A8C1F6D5C00628EA5F0095FF01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
@@ -45,7 +45,7 @@
 		B4585934C53EB2BF3CC510539DA66C55 /* Pods-NabuPod_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NabuPod_Tests-dummy.m"; sourceTree = "<group>"; };
 		BD733B8AB59313ADA056246D67F79610 /* Pods-NabuPod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NabuPod_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BEBFDFF9CCCA05B64395B7FD2A233E50 /* Pods-NabuPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NabuPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C4850DB0607270CDDA19FD1205DBF7BD /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NabuPodDataManager.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NabuPod-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,7 +175,7 @@
 		DC47F2C101366208A7AEDF0617CB825D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C4850DB0607270CDDA19FD1205DBF7BD /* ReplaceMe.swift */,
+				C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -245,6 +245,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					46BEB59B44C8C1EF5658B3A684A7088E = {
+						LastSwiftMigration = 0820;
+					};
+					D30A10592CC5B29A59BEEF0252C6C593 = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -278,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */,
-				21F353F7D434541B154CDEC40F17DF7B /* ReplaceMe.swift in Sources */,
+				21F353F7D434541B154CDEC40F17DF7B /* NabuPodDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +326,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -389,6 +398,7 @@
 				PRODUCT_NAME = Pods_NabuPod_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -418,6 +428,7 @@
 				PRODUCT_NAME = NabuPod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -452,6 +463,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
