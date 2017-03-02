@@ -14,7 +14,7 @@
 		98F623A8C1F6D5C00628EA5F0095FF01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EE3977B38FE707F0CA112B6CBB38D /* NabuPod-dummy.m */; };
-		F1771D521E689910005CF998 /* NabuPodDataManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1771D701E68A274005CF998 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = F1771D6F1E68A271005CF998 /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +49,7 @@
 		C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NabuPodDataManager.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NabuPod-umbrella.h"; sourceTree = "<group>"; };
+		F1771D6F1E68A271005CF998 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */,
+				F1771D6F1E68A271005CF998 /* Test.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -188,8 +190,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1771D701E68A274005CF998 /* Test.h in Headers */,
 				AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */,
-				F1771D521E689910005CF998 /* NabuPodDataManager.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
