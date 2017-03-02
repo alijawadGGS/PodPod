@@ -1,5 +1,20 @@
-use_frameworks!
-target 'NabuPod_Tests' do
-  pod 'NabuPod', :path => '../'
+#use_frameworks!
+#target 'NabuPod_Tests' do
+    #pod 'NabuPod', :path => '../'
   
+  #end
+def reusepods
+    pod 'NabuPod', :path => '../'
+end
+
+target 'NabuPod' do
+    reusepods
+    end
+
+target 'NabuPod_Example' do
+    reusepods
+end
+
+target 'NabuPod_Example_Tests' do
+    reusepods
 end

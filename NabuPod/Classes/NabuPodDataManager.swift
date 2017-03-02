@@ -13,5 +13,6 @@ class NabuPodDataManager
     class func testMethod()
     {
         print("Yes it is working")
+        
     }
 }
