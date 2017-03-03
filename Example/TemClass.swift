@@ -7,11 +7,12 @@
 //
 
 import Foundation
-
+import NabuPod
 class TemClass
 {
     class func tem()
     {
-    
+        NabuPodUserModel.setAppId("tem")
+        print("test")
     }
 }

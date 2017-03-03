@@ -15,6 +15,7 @@
 		AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EE3977B38FE707F0CA112B6CBB38D /* NabuPod-dummy.m */; };
 		F1771D751E69392C005CF998 /* NabuPodDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */; };
+		F1771D7C1E698A17005CF998 /* NabuPodUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1771D7B1E698A17005CF998 /* NabuPodUserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NabuPodDataManager.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NabuPod-umbrella.h"; sourceTree = "<group>"; };
+		F1771D7B1E698A17005CF998 /* NabuPodUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NabuPodUserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */,
+				F1771D7B1E698A17005CF998 /* NabuPodUserModel.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1771D7C1E698A17005CF998 /* NabuPodUserModel.swift in Sources */,
 				B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */,
 				21F353F7D434541B154CDEC40F17DF7B /* NabuPodDataManager.swift in Sources */,
 			);
