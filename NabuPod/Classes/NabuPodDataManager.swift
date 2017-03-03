@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NabuPodDataManager
+public class NabuPodDataManager
 {
     class func testMethod()
     {

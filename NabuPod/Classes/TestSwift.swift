@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TestSwift: NSObject {
+public class TestSwift: NSObject {
     
     class func tem()
     {
