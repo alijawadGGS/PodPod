@@ -27,9 +27,14 @@ public struct NabuPodUserModel
     private var status : Bool? = true
     private var lastLoginTime : Double? = 0.0
     
+    
+    public init() {
+    }
+    
     public mutating func setAppId(appId_ : String?)
     {
         appId = appId_
+        print("setting app id \(appId)")
     }
     
     
