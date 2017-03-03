@@ -14,12 +14,7 @@
 		98F623A8C1F6D5C00628EA5F0095FF01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EE3977B38FE707F0CA112B6CBB38D /* NabuPod-dummy.m */; };
-		F1771D701E68A274005CF998 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = F1771D6F1E68A271005CF998 /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1771D731E68A681005CF998 /* TRCurrencyTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = F1771D711E68A681005CF998 /* TRCurrencyTextField.h */; };
-		F1771D741E68A681005CF998 /* TRCurrencyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F1771D721E68A681005CF998 /* TRCurrencyTextField.m */; };
 		F1771D751E69392C005CF998 /* NabuPodDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */; };
-		F1771D771E69399B005CF998 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1771D761E69399B005CF998 /* TestSwift.swift */; };
-		F1771D781E693C36005CF998 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1771D761E69399B005CF998 /* TestSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +49,6 @@
 		C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NabuPodDataManager.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NabuPod-umbrella.h"; sourceTree = "<group>"; };
-		F1771D6F1E68A271005CF998 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		F1771D711E68A681005CF998 /* TRCurrencyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCurrencyTextField.h; sourceTree = "<group>"; };
-		F1771D721E68A681005CF998 /* TRCurrencyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCurrencyTextField.m; sourceTree = "<group>"; };
-		F1771D761E69399B005CF998 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,10 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */,
-				F1771D711E68A681005CF998 /* TRCurrencyTextField.h */,
-				F1771D721E68A681005CF998 /* TRCurrencyTextField.m */,
-				F1771D6F1E68A271005CF998 /* Test.h */,
-				F1771D761E69399B005CF998 /* TestSwift.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -201,8 +188,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1771D701E68A274005CF998 /* Test.h in Headers */,
-				F1771D731E68A681005CF998 /* TRCurrencyTextField.h in Headers */,
 				AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +245,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				TargetAttributes = {
 					46BEB59B44C8C1EF5658B3A684A7088E = {
 						LastSwiftMigration = 0820;
@@ -293,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1771D781E693C36005CF998 /* TestSwift.swift in Sources */,
 				802EF29E8884D01D73FF096B96B92BFA /* Pods-NabuPod_Tests-dummy.m in Sources */,
 				F1771D751E69392C005CF998 /* NabuPodDataManager.swift in Sources */,
 			);
@@ -304,9 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */,
-				F1771D741E68A681005CF998 /* TRCurrencyTextField.m in Sources */,
 				21F353F7D434541B154CDEC40F17DF7B /* NabuPodDataManager.swift in Sources */,
-				F1771D771E69399B005CF998 /* TestSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +308,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F11FF86042374080783BCDF9EFB06EF /* NabuPod.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -367,13 +349,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -386,6 +372,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -395,7 +382,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEBFDFF9CCCA05B64395B7FD2A233E50 /* Pods-NabuPod_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -429,7 +417,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F11FF86042374080783BCDF9EFB06EF /* NabuPod.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -459,7 +447,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F36AA1FBA8D953480EB4BF025BAD1F6 /* Pods-NabuPod_Tests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -504,14 +493,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
