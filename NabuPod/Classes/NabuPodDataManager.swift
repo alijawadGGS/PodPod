@@ -264,7 +264,18 @@ public class NabuPodDataManager
     {
         if let userInfoArray = getUserInfoArray()
         {
-            var filteredArray = userInfoArray.filtered(using: NSPredicate(format: "(userId == %@) AND (appId == %@)", userId, appId))
+           // var filteredArray = userInfoArray.filtered(using: NSPredicate(format: "(userId == %@) AND (appId == %@)", userId, appId))
+            
+            var filteredArray = userInfoArray.filter{
+                if $0["userId"] as? String == userId && $0["appId"] as? String == appId
+                {
+                    return true
+                }
+                return false
+
+            }
+
+            
             print("Numnber of users in app \(filteredArray.count)")
             if filteredArray.count > 0
             {
@@ -287,9 +298,15 @@ public class NabuPodDataManager
         
         if let userInfoArray = getUserInfoArray()
         {
-            let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "appId != %@", appId))
+           // let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "appId != %@", appId))
             
-            
+            let filteredArray = userInfoArray.filter{
+                if $0["appId"] as? String == appId
+                {
+                    return true
+                }
+            return false
+            }
             for(_, object) in filteredArray.enumerated()
             {
                 arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as! Dictionary<String, Any?>)!)
@@ -308,8 +325,15 @@ public class NabuPodDataManager
 
         if let userInfoArray = getUserInfoArray()
         {
-            let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "appId == %@", appId))
-            
+           // let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "appId == %@", appId))
+            let filteredArray = userInfoArray.filter{
+                if $0["appId"] as? String == appId
+                {
+                    return true
+                }
+                return false
+
+            }
             
             for(_, object) in filteredArray.enumerated()
             {
@@ -328,7 +352,21 @@ public class NabuPodDataManager
         
         if let userInfoArray = getUserInfoArray()
         {
-            let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "userId == %@", userId))
+            
+            
+            let filteredArray = userInfoArray.filter
+            {
+                if $0["userId"] as? String == userId
+                {
+                    return true
+                }
+                
+                return false
+
+            }
+            
+            
+            //(NSPredicate(format: "userId == %@", userId))
             
             
             for(_, object) in filteredArray.enumerated()
@@ -345,11 +383,11 @@ public class NabuPodDataManager
     }
     
     
-    class func getUserInfoArray() -> NSMutableArray?
+    class func getUserInfoArray() -> [[String : Any]]?
     {
         if let data = UICKeyChainStore.data(forKey: keyChainKey, service: keyChainService)
         {
-             return NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray as! NSMutableArray?
+            return NSKeyedUnarchiver.unarchiveObject(with: data) as? [[String : Any]]
 
         }
     
