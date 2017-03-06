@@ -153,7 +153,7 @@ public class NabuPodDataManager
                             
                             if index < userInfoArray!.count
                             {
-                                let dictionary = userInfoArray![index] as! NSDictionary
+                                let dictionary = userInfoArray![index] as! Dictionary<String, AnyObject?>
                                 
                                 let userInfoStruct = NabuPodUserModel.init(propertyListRepresentation: dictionary)
                                 
@@ -226,7 +226,7 @@ public class NabuPodDataManager
             {
                 for index in 0...userInfoArray!.count - 1  {
                     
-                    let dictionary = userInfoArray![index] as! NSDictionary
+                    let dictionary = userInfoArray![index] as! Dictionary<String, AnyObject?>
                     
                    var userInfoStruct = NabuPodUserModel.init(propertyListRepresentation: dictionary)
                     
@@ -270,7 +270,7 @@ public class NabuPodDataManager
             {
                 
                 
-                return NabuPodUserModel.init(propertyListRepresentation: filteredArray[0] as? NSDictionary)
+                return NabuPodUserModel.init(propertyListRepresentation: filteredArray[0] as? Dictionary<String, AnyObject?>)
             
             }
             
@@ -292,7 +292,7 @@ public class NabuPodDataManager
             
             for(_, object) in filteredArray.enumerated()
             {
-                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as! NSDictionary)!)
+                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as! Dictionary<String, AnyObject?>)!)
             }
             
             
@@ -313,7 +313,7 @@ public class NabuPodDataManager
             
             for(_, object) in filteredArray.enumerated()
             {
-                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? NSDictionary)!)
+                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? Dictionary<String, AnyObject?>)!)
             }
             
             
@@ -333,7 +333,7 @@ public class NabuPodDataManager
             
             for(_, object) in filteredArray.enumerated()
             {
-                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? NSDictionary)!)
+                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? Dictionary<String, AnyObject?>)!)
             }
             
             

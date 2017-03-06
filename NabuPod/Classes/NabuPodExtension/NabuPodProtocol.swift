@@ -8,8 +8,8 @@
 
 import Foundation
 protocol PropertyListReadable {
-    func propertyListRepresentation() -> NSDictionary
-    init?(propertyListRepresentation:NSDictionary?)
+    func propertyListRepresentation() -> Dictionary<String, AnyObject?>
+    init?(propertyListRepresentation:Dictionary<String, AnyObject?>?)
 }
 
 

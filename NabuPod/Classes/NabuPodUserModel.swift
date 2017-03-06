@@ -31,16 +31,16 @@ public struct NabuPodUserModel
     public init() {
     }
     
-    public init(data: NSDictionary?)
+    public init(data: Dictionary<String, AnyObject?>?)
     {
         if let userData = data
         {
-            self.appId = userData.object(forKey: "appId") as? String
-            self.token = userData.object(forKey: "token") as? String
-            self.userId = userData.object(forKey: "userId") as? String
-            self.userName = userData.object(forKey: "userName") as? String
-            self.status = userData.object(forKey: "status") as? Bool
-            self.lastLoginTime = userData.object(forKey: "lastLoginTime") as? NSDate
+            self.appId = userData["appId"]! as! String?
+//            self.token = userData.object(forKey: "token") as? String
+//            self.userId = userData.object(forKey: "userId") as? String
+//            self.userName = userData.object(forKey: "userName") as? String
+//            self.status = userData.object(forKey: "status") as? Bool
+//            self.lastLoginTime = userData.object(forKey: "lastLoginTime") as? NSDate
         }
     }
     
@@ -116,7 +116,7 @@ public struct NabuPodUserModel
 extension NabuPodUserModel : PropertyListReadable
 {
     
-    func propertyListRepresentation() -> NSDictionary {
+    func propertyListRepresentation() -> Dictionary<String, AnyObject?> {
         
         var representation = [String : AnyObject]()
         if let appId = self.getAppId()  {
@@ -139,11 +139,11 @@ extension NabuPodUserModel : PropertyListReadable
         }
 
         
-        return representation as NSDictionary
+        return representation as Dictionary<String, AnyObject?>
     }
     
 
-    public init?(propertyListRepresentation:NSDictionary?) {
+    public init?(propertyListRepresentation:Dictionary<String, AnyObject?>?) {
         
         guard let values = propertyListRepresentation
             else {return nil}
