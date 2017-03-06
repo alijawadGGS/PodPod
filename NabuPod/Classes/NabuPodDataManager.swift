@@ -32,7 +32,7 @@ public class NabuPodDataManager
         {
             // search for user in other app
             
-            let otherAppUsers = getAllUsersExceptApp(appId)
+            let otherAppUsers = getAllUsersExceptApp(appId: appId)
             
             if otherAppUsers.count == 0
             { // no user found in other app as well
