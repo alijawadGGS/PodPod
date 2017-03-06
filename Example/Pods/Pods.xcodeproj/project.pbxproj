@@ -22,6 +22,7 @@
 		CB1CBF7857C645D5F98D14E2F803EB5A /* NabuPodDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7397245C7A961FBA7FE4851DB26D2 /* NabuPodDataManager.swift */; };
 		DD561F01D483662C38FB8CA619C4ED24 /* UICKeyChainStore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E68BDFD154C533BFD4A021D17DA65770 /* UICKeyChainStore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7E4BEA9DD25DF185FC4677BB4E1D84D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7B3628A8ACA28FE03A2E1B15EB5DBE /* Foundation.framework */; };
+		F11FECFE1E6D71EC001B0DB5 /* NabuPodProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FECFD1E6D6CD8001B0DB5 /* NabuPodProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -392,6 +393,7 @@
 				3D6D16D02EC12D081682A00CE67A3639 /* NabuPod-dummy.m in Sources */,
 				CB1CBF7857C645D5F98D14E2F803EB5A /* NabuPodDataManager.swift in Sources */,
 				8920FFC788BEFFA5518194F601082C16 /* NabuPodUserModel.swift in Sources */,
+				F11FECFE1E6D71EC001B0DB5 /* NabuPodProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +530,7 @@
 				PRODUCT_NAME = UICKeyChainStore;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -557,6 +560,7 @@
 				PRODUCT_NAME = UICKeyChainStore;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -591,6 +595,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -654,6 +659,7 @@
 				PRODUCT_NAME = Pods_NabuPod_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

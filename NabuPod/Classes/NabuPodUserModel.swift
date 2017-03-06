@@ -35,12 +35,12 @@ public struct NabuPodUserModel
     {
         if let userData = data
         {
-            self.appId = userData.value(forKey: "appId") as? String
-            self.token = userData.value(forKey: "token") as? String
-            self.userId = userData.value(forKey: "userId") as? String
-            self.userName = userData.value(forKey: "userName") as? String
-            self.status = userData.value(forKey: "status") as? Bool
-            self.lastLoginTime = userData.value(forKey: "lastLoginTime") as? NSDate
+            self.appId = userData.object(forKey: "appId") as? String
+            self.token = userData.object(forKey: "token") as? String
+            self.userId = userData.object(forKey: "userId") as? String
+            self.userName = userData.object(forKey: "userName") as? String
+            self.status = userData.object(forKey: "status") as? Bool
+            self.lastLoginTime = userData.object(forKey: "lastLoginTime") as? NSDate
         }
     }
     
