@@ -118,7 +118,7 @@ extension NabuPodUserModel : PropertyListReadable
     
     func propertyListRepresentation() -> Dictionary<String, Any?> {
         
-        var representation = [String : Any]()
+        var representation = [String : Any?]()
         if let appId = self.getAppId()  {
             representation["appId"] = appId as Any?
         }
