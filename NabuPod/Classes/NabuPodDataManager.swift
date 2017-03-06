@@ -307,10 +307,17 @@ public class NabuPodDataManager
                 }
             return false
             }
-            for(_, object) in filteredArray.enumerated()
+            
+            for object in filteredArray
             {
                 arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as! Dictionary<String, Any?>)!)
+
             }
+            
+//            for(_, object) in filteredArray.enumerated()
+//            {
+//                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as! Dictionary<String, Any?>)!)
+//            }
             
             
         }
@@ -335,10 +342,16 @@ public class NabuPodDataManager
 
             }
             
-            for(_, object) in filteredArray.enumerated()
+            for object in filteredArray
             {
                 arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? Dictionary<String, Any?>)!)
             }
+            
+            
+//            for(_, object) in filteredArray.enumerated()
+//            {
+//                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? Dictionary<String, Any?>)!)
+//            }
             
             
         }
@@ -369,10 +382,16 @@ public class NabuPodDataManager
             //(NSPredicate(format: "userId == %@", userId))
             
             
-            for(_, object) in filteredArray.enumerated()
+            
+            for object in filteredArray
             {
                 arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? Dictionary<String, Any?>)!)
             }
+            
+//            for(_, object) in filteredArray.enumerated()
+//            {
+//                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? Dictionary<String, Any?>)!)
+//            }
             
             
         }
