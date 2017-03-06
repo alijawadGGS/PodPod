@@ -31,7 +31,7 @@ public struct NabuPodUserModel
     public init() {
     }
     
-    public init(data: Dictionary<String, AnyObject?>?)
+    public init(data: Dictionary<String, Any?>?)
     {
         if let userData = data
         {
@@ -116,34 +116,34 @@ public struct NabuPodUserModel
 extension NabuPodUserModel : PropertyListReadable
 {
     
-    func propertyListRepresentation() -> Dictionary<String, AnyObject?> {
+    func propertyListRepresentation() -> Dictionary<String, Any?> {
         
-        var representation = [String : AnyObject]()
+        var representation = [String : Any]()
         if let appId = self.getAppId()  {
-            representation["appId"] = appId as AnyObject?
+            representation["appId"] = appId as Any?
         }
         if let token = self.getToken(){
-            representation["token"] = token as AnyObject?
+            representation["token"] = token as Any?
         }
         if let userId = self.getUserId(){
-            representation["userId"] = userId as AnyObject?
+            representation["userId"] = userId as Any?
         }
         if let userName = self.getUserName(){
-            representation["userName"] = userName as AnyObject?
+            representation["userName"] = userName as Any?
         }
         if let status = self.getStatus(){
-            representation["status"] = status as AnyObject?
+            representation["status"] = status as Any?
         }
         if let lastLoginTime = self.getLastLoginTime(){
-            representation["lastLoginTime"] = lastLoginTime as AnyObject?
+            representation["lastLoginTime"] = lastLoginTime as Any?
         }
 
         
-        return representation as Dictionary<String, AnyObject?>
+        return representation as Dictionary<String, Any?>
     }
     
 
-    public init?(propertyListRepresentation:Dictionary<String, AnyObject?>?) {
+    public init?(propertyListRepresentation:Dictionary<String, Any?>?) {
         
         guard let values = propertyListRepresentation
             else {return nil}
