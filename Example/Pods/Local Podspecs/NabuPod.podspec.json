@@ -1,6 +1,6 @@
 {
   "name": "NabuPod",
-  "version": "0.1.16",
+  "version": "0.1.21",
   "summary": "Learning pod for nabufit app.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/alijawadGGS/PodPod",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/alijawadGGS/PodPod.git",
-    "tag": "0.1.16"
+    "tag": "0.1.21"
   },
   "platforms": {
     "ios": "8.0"

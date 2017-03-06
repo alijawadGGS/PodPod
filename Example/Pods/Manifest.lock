@@ -1,5 +1,5 @@
 PODS:
-  - NabuPod (0.1.16):
+  - NabuPod (0.1.21):
     - UICKeyChainStore
   - UICKeyChainStore (2.1.0)
 
@@ -12,9 +12,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  NabuPod: 0544839b34e4aa93d20ef6050d7874592a800a61
+  NabuPod: 6d4086295a27a09a59779c62bc11e9b6a5ab5e32
   UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
 
 PODFILE CHECKSUM: 8e13ab6ad05ddb729805f68ff983841c3f14a303
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0
