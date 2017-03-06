@@ -1,9 +1,9 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/NabuPod"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/NabuPod" "$PODS_CONFIGURATION_BUILD_DIR/UICKeyChainStore"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/NabuPod/NabuPod.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "NabuPod"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/NabuPod/NabuPod.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/UICKeyChainStore/UICKeyChainStore.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "NabuPod" -framework "UICKeyChainStore"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

@@ -1,9 +1,9 @@
 {
   "name": "NabuPod",
-  "version": "0.1.0",
-  "summary": "A short description of NabuPod.",
+  "version": "0.1.16",
+  "summary": "Learning pod for nabufit app.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/alijawadGGS/NabuPod",
+  "homepage": "https://github.com/alijawadGGS/PodPod",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "alijawadGGS": "jawad.jd@hotmail.com"
   },
   "source": {
-    "git": "https://github.com/alijawadGGS/NabuPod.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/alijawadGGS/PodPod.git",
+    "tag": "0.1.16"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "NabuPod/Classes/**/*"
+  "source_files": "NabuPod/Classes/**/*.{swift}",
+  "dependencies": {
+    "UICKeyChainStore": [
+
+    ]
+  }
 }

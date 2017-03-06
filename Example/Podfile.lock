@@ -1,16 +1,20 @@
 PODS:
-  - NabuPod (0.1.0)
+  - NabuPod (0.1.16):
+    - UICKeyChainStore
+  - UICKeyChainStore (2.1.0)
 
 DEPENDENCIES:
   - NabuPod (from `../`)
+  - UICKeyChainStore
 
 EXTERNAL SOURCES:
   NabuPod:
     :path: ../
 
 SPEC CHECKSUMS:
-  NabuPod: 9f3bece743d4eb396c8fdcd73bc2f58b079d0830
+  NabuPod: 0544839b34e4aa93d20ef6050d7874592a800a61
+  UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
 
-PODFILE CHECKSUM: e95e2640dcd40940c56d184c216de0e4e61026ea
+PODFILE CHECKSUM: 8e13ab6ad05ddb729805f68ff983841c3f14a303
 
 COCOAPODS: 1.0.1

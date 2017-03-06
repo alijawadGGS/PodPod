@@ -7,66 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2195D351A3A1CF1A50D1B8FE6685A748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		21F353F7D434541B154CDEC40F17DF7B /* NabuPodDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */; };
-		2D582FFACEBF7810708CF46078802BBD /* Pods-NabuPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD733B8AB59313ADA056246D67F79610 /* Pods-NabuPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		802EF29E8884D01D73FF096B96B92BFA /* Pods-NabuPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4585934C53EB2BF3CC510539DA66C55 /* Pods-NabuPod_Tests-dummy.m */; };
-		98F623A8C1F6D5C00628EA5F0095FF01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EE3977B38FE707F0CA112B6CBB38D /* NabuPod-dummy.m */; };
-		F1771D751E69392C005CF998 /* NabuPodDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */; };
-		F1771D7C1E698A17005CF998 /* NabuPodUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1771D7B1E698A17005CF998 /* NabuPodUserModel.swift */; };
+		0D5428DCD0CD478619E93C47EC2225BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7B3628A8ACA28FE03A2E1B15EB5DBE /* Foundation.framework */; };
+		3B9737BCDDE1C3A64E92F39F3C27C1F1 /* Pods-NabuPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4585934C53EB2BF3CC510539DA66C55 /* Pods-NabuPod_Tests-dummy.m */; };
+		3D6D16D02EC12D081682A00CE67A3639 /* NabuPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 656EE3977B38FE707F0CA112B6CBB38D /* NabuPod-dummy.m */; };
+		4FDC41D7BB7737177DDECFD9FED38089 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724697F1D62D590DD6FCBF5E6B64F83E /* Security.framework */; };
+		52390D2E0598759EB79C0B49ED2DA590 /* UICKeyChainStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B5EB5621296E17209C004E825A4319 /* UICKeyChainStore.framework */; };
+		6312DEB237ABA866D6304D469347204A /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AF493FE60E4C446B9FA59AC4451496 /* UICKeyChainStore.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		77F0A57658F4CD00E7C8BE4EC98F203E /* NabuPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C7BC1B83A0CD6A76A980365D2098A3C /* UICKeyChainStore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 892D167D21BD3E477D4F861DFF850F0E /* UICKeyChainStore-dummy.m */; };
+		7D8F88121AF468C0BBE5276486F22A13 /* UICKeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = FA41C4B51CE03A994B4D784CDFF397A8 /* UICKeyChainStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8920FFC788BEFFA5518194F601082C16 /* NabuPodUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6894D448D708BD63AADE58C5B6033EBE /* NabuPodUserModel.swift */; };
+		B7B966916FC908456D19C5E1E65CD422 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7B3628A8ACA28FE03A2E1B15EB5DBE /* Foundation.framework */; };
+		C5455054D2B82E9BB316DBD1D552D44A /* Pods-NabuPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD733B8AB59313ADA056246D67F79610 /* Pods-NabuPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB1CBF7857C645D5F98D14E2F803EB5A /* NabuPodDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7397245C7A961FBA7FE4851DB26D2 /* NabuPodDataManager.swift */; };
+		DD561F01D483662C38FB8CA619C4ED24 /* UICKeyChainStore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E68BDFD154C533BFD4A021D17DA65770 /* UICKeyChainStore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7E4BEA9DD25DF185FC4677BB4E1D84D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7B3628A8ACA28FE03A2E1B15EB5DBE /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0342AC49E58DA3BA568B9974E485ADA3 /* PBXContainerItemProxy */ = {
+		6E94F0F8CD424DFABFCE7A8475E42971 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D30A10592CC5B29A59BEEF0252C6C593;
+			remoteGlobalIDString = 77ACC5FCDF4C120D6B615E264E4994D1;
+			remoteInfo = UICKeyChainStore;
+		};
+		9B504994B2180F73D0B7CC7765829FD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77ACC5FCDF4C120D6B615E264E4994D1;
+			remoteInfo = UICKeyChainStore;
+		};
+		B6F8545309494EB7A58F1F4AAF0F6DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DFC1B2204E535351999332DB933DFD6;
 			remoteInfo = NabuPod;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00506D9834CC172A0F539B3846FE5CF7 /* UICKeyChainStore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UICKeyChainStore.modulemap; sourceTree = "<group>"; };
+		055897E1F7BD70097DAF1DDC9A9ACC3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F36AA1FBA8D953480EB4BF025BAD1F6 /* Pods-NabuPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NabuPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F7B3628A8ACA28FE03A2E1B15EB5DBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0FF7397245C7A961FBA7FE4851DB26D2 /* NabuPodDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NabuPodDataManager.swift; sourceTree = "<group>"; };
 		49F36A9ABDA49B3C99E7422B6C4276BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5340F416341482619EC1ECA57B09B699 /* Pods-NabuPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NabuPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5620B939ABF44A27211B6CA45A5C640D /* Pods_NabuPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NabuPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B120490292D391E4413A4D90AABFCFB /* NabuPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NabuPod.modulemap; sourceTree = "<group>"; };
-		6101C0A9D4807D4A8AB97F618DC99027 /* NabuPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NabuPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6097CDAE9B83B6BAC2890352A3542326 /* NabuPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NabuPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		656EE3977B38FE707F0CA112B6CBB38D /* NabuPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NabuPod-dummy.m"; sourceTree = "<group>"; };
+		6894D448D708BD63AADE58C5B6033EBE /* NabuPodUserModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NabuPodUserModel.swift; sourceTree = "<group>"; };
 		6CBDC05D97868C7B2542AA28A4E6ABAA /* NabuPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NabuPod-prefix.pch"; sourceTree = "<group>"; };
-		760D5EE176C8B551387DDA10BB64BDED /* Pods_NabuPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NabuPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		724697F1D62D590DD6FCBF5E6B64F83E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		8228E99F8813B13DF28C593766779543 /* Pods-NabuPod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NabuPod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8258AC654B72E279CFE278AE14703348 /* Pods-NabuPod_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NabuPod_Tests.modulemap"; sourceTree = "<group>"; };
 		82C5C702979F80C5A1C8DA44286078D8 /* Pods-NabuPod_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NabuPod_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		892D167D21BD3E477D4F861DFF850F0E /* UICKeyChainStore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICKeyChainStore-dummy.m"; sourceTree = "<group>"; };
 		8F11FF86042374080783BCDF9EFB06EF /* NabuPod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NabuPod.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6AF493FE60E4C446B9FA59AC4451496 /* UICKeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UICKeyChainStore.m; path = Lib/UICKeyChainStore/UICKeyChainStore.m; sourceTree = "<group>"; };
 		A8A6B177A10504C176EE0F6ED34E9CF3 /* Pods-NabuPod_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NabuPod_Tests-resources.sh"; sourceTree = "<group>"; };
 		B28360078B22A8ACCB3DA25425DC25EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4585934C53EB2BF3CC510539DA66C55 /* Pods-NabuPod_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NabuPod_Tests-dummy.m"; sourceTree = "<group>"; };
+		B73E065947F3730C9C4E3E746C19F454 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICKeyChainStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD24673BF7B7C4031B444A82E104F275 /* UICKeyChainStore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICKeyChainStore.xcconfig; sourceTree = "<group>"; };
 		BD733B8AB59313ADA056246D67F79610 /* Pods-NabuPod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NabuPod_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BEBFDFF9CCCA05B64395B7FD2A233E50 /* Pods-NabuPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NabuPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NabuPodDataManager.swift; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C5B5EB5621296E17209C004E825A4319 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICKeyChainStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1231F3F449229640BF7BE62D41EEFF /* UICKeyChainStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-prefix.pch"; sourceTree = "<group>"; };
+		E68BDFD154C533BFD4A021D17DA65770 /* UICKeyChainStore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-umbrella.h"; sourceTree = "<group>"; };
 		E90237E23D51EDDC0ABA037A18B44FE9 /* NabuPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NabuPod-umbrella.h"; sourceTree = "<group>"; };
-		F1771D7B1E698A17005CF998 /* NabuPodUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NabuPodUserModel.swift; sourceTree = "<group>"; };
+		F11FECFD1E6D6CD8001B0DB5 /* NabuPodProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NabuPodProtocol.swift; sourceTree = "<group>"; };
+		FA41C4B51CE03A994B4D784CDFF397A8 /* UICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UICKeyChainStore.h; path = Lib/UICKeyChainStore/UICKeyChainStore.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		66E5A55E40D6568F0C77FBF4A7009F36 /* Frameworks */ = {
+		41770A09ECAE516D1FE7752419E9DD1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2195D351A3A1CF1A50D1B8FE6685A748 /* Foundation.framework in Frameworks */,
+				E7E4BEA9DD25DF185FC4677BB4E1D84D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE1A0ACA854263D576DAC339F0826A73 /* Frameworks */ = {
+		9432D4537008FD034E57376F3B415372 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98F623A8C1F6D5C00628EA5F0095FF01 /* Foundation.framework in Frameworks */,
+				B7B966916FC908456D19C5E1E65CD422 /* Foundation.framework in Frameworks */,
+				52390D2E0598759EB79C0B49ED2DA590 /* UICKeyChainStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6374772511A54F0F8B1E4EBF81241C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5428DCD0CD478619E93C47EC2225BB /* Foundation.framework in Frameworks */,
+				4FDC41D7BB7737177DDECFD9FED38089 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +118,7 @@
 		0ED4FE5662E36A1D0702CC6958504BE7 /* NabuPod */ = {
 			isa = PBXGroup;
 			children = (
-				7C871A055E7C96CD2B81A9B99D320F51 /* NabuPod */,
+				E89A92CDD8D703CBD4C495DBD0374D2E /* NabuPod */,
 				33C3AA6DA0E5D6DCB05419FA7944BCEC /* Support Files */,
 			);
 			name = NabuPod;
@@ -115,21 +157,28 @@
 			path = "Example/Pods/Target Support Files/NabuPod";
 			sourceTree = "<group>";
 		};
-		3C131500A85343A2F578AAC640BCADCF /* Products */ = {
+		564132BEEDDE885A5E7CDDF10AD7C99A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6101C0A9D4807D4A8AB97F618DC99027 /* NabuPod.framework */,
-				760D5EE176C8B551387DDA10BB64BDED /* Pods_NabuPod_Tests.framework */,
+				6097CDAE9B83B6BAC2890352A3542326 /* NabuPod.framework */,
+				5620B939ABF44A27211B6CA45A5C640D /* Pods_NabuPod_Tests.framework */,
+				B73E065947F3730C9C4E3E746C19F454 /* UICKeyChainStore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		6C98C7258D9E1838D526F95F1F878923 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				055897E1F7BD70097DAF1DDC9A9ACC3C /* Info.plist */,
+				00506D9834CC172A0F539B3846FE5CF7 /* UICKeyChainStore.modulemap */,
+				BD24673BF7B7C4031B444A82E104F275 /* UICKeyChainStore.xcconfig */,
+				892D167D21BD3E477D4F861DFF850F0E /* UICKeyChainStore-dummy.m */,
+				DB1231F3F449229640BF7BE62D41EEFF /* UICKeyChainStore-prefix.pch */,
+				E68BDFD154C533BFD4A021D17DA65770 /* UICKeyChainStore-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/UICKeyChainStore";
 			sourceTree = "<group>";
 		};
 		6EE1972C1175DF62D71E5AD09571200D /* Development Pods */ = {
@@ -140,12 +189,13 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		7C871A055E7C96CD2B81A9B99D320F51 /* NabuPod */ = {
+		765B2D8B1B7CB837123CE404BB7E1380 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC47F2C101366208A7AEDF0617CB825D /* Classes */,
+				C5B5EB5621296E17209C004E825A4319 /* UICKeyChainStore.framework */,
+				CB14EC5D2E2EA7C19E9A6EFB1EFA94F1 /* iOS */,
 			);
-			path = NabuPod;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -153,8 +203,9 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				6EE1972C1175DF62D71E5AD09571200D /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3C131500A85343A2F578AAC640BCADCF /* Products */,
+				765B2D8B1B7CB837123CE404BB7E1380 /* Frameworks */,
+				CA4C03C69402B1D1EC60C02B0D438E6B /* Pods */,
+				564132BEEDDE885A5E7CDDF10AD7C99A /* Products */,
 				9ED34A8E2B3272762EEA340C3E464632 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -167,78 +218,142 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B0EA3FA4D5D30339C9CFA76CE9F6A3DC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DC47F2C101366208A7AEDF0617CB825D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C4850DB0607270CDDA19FD1205DBF7BD /* NabuPodDataManager.swift */,
-				F1771D7B1E698A17005CF998 /* NabuPodUserModel.swift */,
+				F11FECFC1E6D6CD8001B0DB5 /* NabuPodExtension */,
+				0FF7397245C7A961FBA7FE4851DB26D2 /* NabuPodDataManager.swift */,
+				6894D448D708BD63AADE58C5B6033EBE /* NabuPodUserModel.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		CA4C03C69402B1D1EC60C02B0D438E6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB8BFCFC80482277EB431187AC03EB2C /* UICKeyChainStore */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB14EC5D2E2EA7C19E9A6EFB1EFA94F1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0F7B3628A8ACA28FE03A2E1B15EB5DBE /* Foundation.framework */,
+				724697F1D62D590DD6FCBF5E6B64F83E /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E89A92CDD8D703CBD4C495DBD0374D2E /* NabuPod */ = {
+			isa = PBXGroup;
+			children = (
+				B0EA3FA4D5D30339C9CFA76CE9F6A3DC /* Classes */,
+			);
+			path = NabuPod;
+			sourceTree = "<group>";
+		};
+		EB8BFCFC80482277EB431187AC03EB2C /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				FA41C4B51CE03A994B4D784CDFF397A8 /* UICKeyChainStore.h */,
+				A6AF493FE60E4C446B9FA59AC4451496 /* UICKeyChainStore.m */,
+				6C98C7258D9E1838D526F95F1F878923 /* Support Files */,
+			);
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
+		F11FECFC1E6D6CD8001B0DB5 /* NabuPodExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F11FECFD1E6D6CD8001B0DB5 /* NabuPodProtocol.swift */,
+			);
+			path = NabuPodExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		553AD31EC82330D3AB57CF3ECA8FE7F9 /* Headers */ = {
+		E27F44D941F2C698321417D96BCCE0C9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE1FA40A250DFCB673E115D6A64CDC7F /* NabuPod-umbrella.h in Headers */,
+				77F0A57658F4CD00E7C8BE4EC98F203E /* NabuPod-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59D1CD3DB53D99D478D444EFAB0F7695 /* Headers */ = {
+		E9ACA689044FD4E8CE0A0030569D9268 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D582FFACEBF7810708CF46078802BBD /* Pods-NabuPod_Tests-umbrella.h in Headers */,
+				C5455054D2B82E9BB316DBD1D552D44A /* Pods-NabuPod_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0319324D02EB5A0603A3BB2385CC19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD561F01D483662C38FB8CA619C4ED24 /* UICKeyChainStore-umbrella.h in Headers */,
+				7D8F88121AF468C0BBE5276486F22A13 /* UICKeyChainStore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		46BEB59B44C8C1EF5658B3A684A7088E /* Pods-NabuPod_Tests */ = {
+		3DFC1B2204E535351999332DB933DFD6 /* NabuPod */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DB6A59DC71D189CDF3A688BA8E41065 /* Build configuration list for PBXNativeTarget "Pods-NabuPod_Tests" */;
+			buildConfigurationList = 33E1E9E67835C927BD915633C170BB14 /* Build configuration list for PBXNativeTarget "NabuPod" */;
 			buildPhases = (
-				743DA18BE6084824957DD5CBE5D9A897 /* Sources */,
-				66E5A55E40D6568F0C77FBF4A7009F36 /* Frameworks */,
-				59D1CD3DB53D99D478D444EFAB0F7695 /* Headers */,
+				57C4F6DB01C72CF51255CB6EAEAFA06F /* Sources */,
+				9432D4537008FD034E57376F3B415372 /* Frameworks */,
+				E27F44D941F2C698321417D96BCCE0C9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FE4575AB258CB6B10C49387302AD8806 /* PBXTargetDependency */,
-			);
-			name = "Pods-NabuPod_Tests";
-			productName = "Pods-NabuPod_Tests";
-			productReference = 760D5EE176C8B551387DDA10BB64BDED /* Pods_NabuPod_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D30A10592CC5B29A59BEEF0252C6C593 /* NabuPod */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 77CCE7388644836A04FABB79F2CB7AC5 /* Build configuration list for PBXNativeTarget "NabuPod" */;
-			buildPhases = (
-				CBEE39E53BC681E3E3D9EC7F54EEFF9E /* Sources */,
-				CE1A0ACA854263D576DAC339F0826A73 /* Frameworks */,
-				553AD31EC82330D3AB57CF3ECA8FE7F9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
+				BB7FF477742604FFAB27D33AA52BDCA3 /* PBXTargetDependency */,
 			);
 			name = NabuPod;
 			productName = NabuPod;
-			productReference = 6101C0A9D4807D4A8AB97F618DC99027 /* NabuPod.framework */;
+			productReference = 6097CDAE9B83B6BAC2890352A3542326 /* NabuPod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		663DC44EA11143AB9B01B313ED570272 /* Pods-NabuPod_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44FA4514542CBD8934F86D10CF47F2E6 /* Build configuration list for PBXNativeTarget "Pods-NabuPod_Tests" */;
+			buildPhases = (
+				B7A528DD47DA1C84469E19F48F105907 /* Sources */,
+				41770A09ECAE516D1FE7752419E9DD1A /* Frameworks */,
+				E9ACA689044FD4E8CE0A0030569D9268 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1271D131D4B41BB145250343D3FC708B /* PBXTargetDependency */,
+				EE9F6B5CE90268A48C2E021ACCCA44CF /* PBXTargetDependency */,
+			);
+			name = "Pods-NabuPod_Tests";
+			productName = "Pods-NabuPod_Tests";
+			productReference = 5620B939ABF44A27211B6CA45A5C640D /* Pods_NabuPod_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77ACC5FCDF4C120D6B615E264E4994D1 /* UICKeyChainStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9285F26C1D351D1FD32C90FCBAB5E632 /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */;
+			buildPhases = (
+				C0D6ABECA0D2BEDFF89AE041F7698A63 /* Sources */,
+				A6374772511A54F0F8B1E4EBF81241C8 /* Frameworks */,
+				EE0319324D02EB5A0603A3BB2385CC19 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICKeyChainStore;
+			productName = UICKeyChainStore;
+			productReference = B73E065947F3730C9C4E3E746C19F454 /* UICKeyChainStore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -248,15 +363,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
-				TargetAttributes = {
-					46BEB59B44C8C1EF5658B3A684A7088E = {
-						LastSwiftMigration = 0820;
-					};
-					D30A10592CC5B29A59BEEF0252C6C593 = {
-						LastSwiftMigration = 0820;
-					};
-				};
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -266,79 +373,69 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3C131500A85343A2F578AAC640BCADCF /* Products */;
+			productRefGroup = 564132BEEDDE885A5E7CDDF10AD7C99A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D30A10592CC5B29A59BEEF0252C6C593 /* NabuPod */,
-				46BEB59B44C8C1EF5658B3A684A7088E /* Pods-NabuPod_Tests */,
+				3DFC1B2204E535351999332DB933DFD6 /* NabuPod */,
+				663DC44EA11143AB9B01B313ED570272 /* Pods-NabuPod_Tests */,
+				77ACC5FCDF4C120D6B615E264E4994D1 /* UICKeyChainStore */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		743DA18BE6084824957DD5CBE5D9A897 /* Sources */ = {
+		57C4F6DB01C72CF51255CB6EAEAFA06F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				802EF29E8884D01D73FF096B96B92BFA /* Pods-NabuPod_Tests-dummy.m in Sources */,
-				F1771D751E69392C005CF998 /* NabuPodDataManager.swift in Sources */,
+				3D6D16D02EC12D081682A00CE67A3639 /* NabuPod-dummy.m in Sources */,
+				CB1CBF7857C645D5F98D14E2F803EB5A /* NabuPodDataManager.swift in Sources */,
+				8920FFC788BEFFA5518194F601082C16 /* NabuPodUserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBEE39E53BC681E3E3D9EC7F54EEFF9E /* Sources */ = {
+		B7A528DD47DA1C84469E19F48F105907 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1771D7C1E698A17005CF998 /* NabuPodUserModel.swift in Sources */,
-				B706D102F4A2341BEF18153CD985E5DE /* NabuPod-dummy.m in Sources */,
-				21F353F7D434541B154CDEC40F17DF7B /* NabuPodDataManager.swift in Sources */,
+				3B9737BCDDE1C3A64E92F39F3C27C1F1 /* Pods-NabuPod_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0D6ABECA0D2BEDFF89AE041F7698A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7BC1B83A0CD6A76A980365D2098A3C /* UICKeyChainStore-dummy.m in Sources */,
+				6312DEB237ABA866D6304D469347204A /* UICKeyChainStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FE4575AB258CB6B10C49387302AD8806 /* PBXTargetDependency */ = {
+		1271D131D4B41BB145250343D3FC708B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NabuPod;
-			target = D30A10592CC5B29A59BEEF0252C6C593 /* NabuPod */;
-			targetProxy = 0342AC49E58DA3BA568B9974E485ADA3 /* PBXContainerItemProxy */;
+			target = 3DFC1B2204E535351999332DB933DFD6 /* NabuPod */;
+			targetProxy = B6F8545309494EB7A58F1F4AAF0F6DAB /* PBXContainerItemProxy */;
+		};
+		BB7FF477742604FFAB27D33AA52BDCA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = 77ACC5FCDF4C120D6B615E264E4994D1 /* UICKeyChainStore */;
+			targetProxy = 9B504994B2180F73D0B7CC7765829FD4 /* PBXContainerItemProxy */;
+		};
+		EE9F6B5CE90268A48C2E021ACCCA44CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = 77ACC5FCDF4C120D6B615E264E4994D1 /* UICKeyChainStore */;
+			targetProxy = 6E94F0F8CD424DFABFCE7A8475E42971 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		001EF5697704EB7596979A37328B74DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F11FF86042374080783BCDF9EFB06EF /* NabuPod.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NabuPod/NabuPod-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NabuPod/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NabuPod/NabuPod.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = NabuPod;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -353,17 +450,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -376,20 +469,107 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		1B9AA690874CC84BA93A5882B6ACFA4E /* Release */ = {
+		2A87E7925166D95F6E9AB95C1F12C2C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEBFDFF9CCCA05B64395B7FD2A233E50 /* Pods-NabuPod_Tests.release.xcconfig */;
+			baseConfigurationReference = 8F11FF86042374080783BCDF9EFB06EF /* NabuPod.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NabuPod/NabuPod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NabuPod/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NabuPod/NabuPod.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NabuPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4526FB29CEE73B44228E17F13D1E92A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD24673BF7B7C4031B444A82E104F275 /* UICKeyChainStore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICKeyChainStore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UICKeyChainStore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A692099429805CFCDC29EF559363F034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD24673BF7B7C4031B444A82E104F275 /* UICKeyChainStore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICKeyChainStore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UICKeyChainStore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A8AFD04C5F9D1547F3788D23F136EC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F36AA1FBA8D953480EB4BF025BAD1F6 /* Pods-NabuPod_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -402,7 +582,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NabuPod_Tests/Pods-NabuPod_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -410,18 +590,18 @@
 				PRODUCT_NAME = Pods_NabuPod_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		535EE8D774693E4876C6721C3D30426D /* Release */ = {
+		BC2C84CC2CDAB9D8147FAF026EEAB2E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F11FF86042374080783BCDF9EFB06EF /* NabuPod.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -447,14 +627,13 @@
 			};
 			name = Release;
 		};
-		99521461CB86242A06DA5E11271AF739 /* Debug */ = {
+		C7D81773D41A097FC243A18C2E43D019 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F36AA1FBA8D953480EB4BF025BAD1F6 /* Pods-NabuPod_Tests.debug.xcconfig */;
+			baseConfigurationReference = BEBFDFF9CCCA05B64395B7FD2A233E50 /* Pods-NabuPod_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -467,7 +646,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NabuPod_Tests/Pods-NabuPod_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -475,13 +654,11 @@
 				PRODUCT_NAME = Pods_NabuPod_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -497,18 +674,14 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -541,20 +714,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77CCE7388644836A04FABB79F2CB7AC5 /* Build configuration list for PBXNativeTarget "NabuPod" */ = {
+		33E1E9E67835C927BD915633C170BB14 /* Build configuration list for PBXNativeTarget "NabuPod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				001EF5697704EB7596979A37328B74DC /* Debug */,
-				535EE8D774693E4876C6721C3D30426D /* Release */,
+				2A87E7925166D95F6E9AB95C1F12C2C3 /* Debug */,
+				BC2C84CC2CDAB9D8147FAF026EEAB2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DB6A59DC71D189CDF3A688BA8E41065 /* Build configuration list for PBXNativeTarget "Pods-NabuPod_Tests" */ = {
+		44FA4514542CBD8934F86D10CF47F2E6 /* Build configuration list for PBXNativeTarget "Pods-NabuPod_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99521461CB86242A06DA5E11271AF739 /* Debug */,
-				1B9AA690874CC84BA93A5882B6ACFA4E /* Release */,
+				A8AFD04C5F9D1547F3788D23F136EC41 /* Debug */,
+				C7D81773D41A097FC243A18C2E43D019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9285F26C1D351D1FD32C90FCBAB5E632 /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A692099429805CFCDC29EF559363F034 /* Debug */,
+				4526FB29CEE73B44228E17F13D1E92A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

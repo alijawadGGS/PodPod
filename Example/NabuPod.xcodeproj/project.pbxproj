@@ -10,7 +10,6 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		BBED73077DFE7169B1DE50FB /* Pods_NabuPod_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF9F080031835817DCB6357 /* Pods_NabuPod_Tests.framework */; };
 		F1771D661E68A0FC005CF998 /* NabuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1771D651E68A0FC005CF998 /* NabuTests.swift */; };
-		F1A4D0B91E68423300A6C6F7 /* TemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A4D0B81E68423300A6C6F7 /* TemClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		F1771D601E68A0FC005CF998 /* NabuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NabuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1771D651E68A0FC005CF998 /* NabuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NabuTests.swift; sourceTree = "<group>"; };
 		F1771D671E68A0FC005CF998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1A4D0B81E68423300A6C6F7 /* TemClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemClass.swift; sourceTree = "<group>"; };
 		FFF9F080031835817DCB6357 /* Pods_NabuPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NabuPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,7 +59,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				F1A4D0B81E68423300A6C6F7 /* TemClass.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				F1771D591E68A0FC005CF998 /* Nabu */,
@@ -187,6 +184,7 @@
 				TargetAttributes = {
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = MEU9B9MP58;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -287,7 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-				F1A4D0B91E68423300A6C6F7 /* TemClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +393,7 @@
 			baseConfigurationReference = 4A56BF31A71BF1E75FFC7551 /* Pods-NabuPod_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MEU9B9MP58;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -417,6 +415,7 @@
 			baseConfigurationReference = 7CA6F88797ABB59BA8753BB1 /* Pods-NabuPod_Tests.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MEU9B9MP58;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -489,6 +488,7 @@
 				F1771D6C1E68A0FC005CF998 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
