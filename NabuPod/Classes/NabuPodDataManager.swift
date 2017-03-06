@@ -226,7 +226,7 @@ public class NabuPodDataManager
     {
         if let data = UICKeyChainStore.data(forKey: keyChainKey, service: keyChainService)
         {
-            var userInfoArray = NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray as! NSMutableArray?
+            let userInfoArray = NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray as! NSMutableArray?
             
             if userInfoArray != nil
             {
@@ -298,7 +298,7 @@ public class NabuPodDataManager
             
             for(_, object) in filteredArray.enumerated()
             {
-                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as! NSDictionary)!)
+                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? NSDictionary)!)
             }
             
             
