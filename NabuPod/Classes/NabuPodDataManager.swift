@@ -17,13 +17,13 @@ public class NabuPodDataManager
     //MARK: Exposed Methods
     
     
-    public class func getPreferredUser(appId : String) -> NabuPodUserModel?
+    public class func getPreferredUser(_appId : String) -> NabuPodUserModel?
     {
         // if found no user record against appId; check in other app
         // if found single user record against appId; return the record
         // if found multiple users against appId, return most recent record
         
-        let appSpecificUsers = getAllUsersInApp(appId: appId)
+        let appSpecificUsers = getAllUsersInApp(appId: _appId)
         
         
         
@@ -32,7 +32,7 @@ public class NabuPodDataManager
         {
             // search for user in other app
             
-            let otherAppUsers = getAllUsersExceptApp(appId: appId)
+            let otherAppUsers = getAllUsersExceptApp(appId: _appId)
             
             if otherAppUsers.count == 0
             { // no user found in other app as well
