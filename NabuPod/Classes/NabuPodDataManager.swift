@@ -153,7 +153,7 @@ public class NabuPodDataManager
                             
                             if index < userInfoArray!.count
                             {
-                                let dictionary = userInfoArray![index] as! Dictionary<String, Any?>
+                                let dictionary = userInfoArray![index] as! NSDictionary
                                 
                                 let userInfoStruct = NabuPodUserModel.init(propertyListRepresentation: dictionary)
                                 
@@ -173,6 +173,12 @@ public class NabuPodDataManager
                             
                             
                         }
+                        
+//                        for index in userInfoArray!.count - 1 ...  {
+//                            
+//                           
+//                            
+//                        }
                         
                         
                         saveUserInfoArray(array: userInfoArray!)
@@ -226,7 +232,7 @@ public class NabuPodDataManager
             {
                 for index in 0...userInfoArray!.count - 1  {
                     
-                    let dictionary = userInfoArray![index] as! Dictionary<String, Any?>
+                    let dictionary = userInfoArray![index] as! NSDictionary
                     
                    var userInfoStruct = NabuPodUserModel.init(propertyListRepresentation: dictionary)
                     
@@ -264,24 +270,13 @@ public class NabuPodDataManager
     {
         if let userInfoArray = getUserInfoArray()
         {
-           // var filteredArray = userInfoArray.filtered(using: NSPredicate(format: "(userId == %@) AND (appId == %@)", userId, appId))
-            
-            var filteredArray = userInfoArray.filter{
-                if $0["userId"] as? String == userId && $0["appId"] as? String == appId
-                {
-                    return true
-                }
-                return false
-
-            }
-
-            
+            var filteredArray = userInfoArray.filtered(using: NSPredicate(format: "(userId == %@) AND (appId == %@)", userId, appId))
             print("Numnber of users in app \(filteredArray.count)")
             if filteredArray.count > 0
             {
                 
                 
-                return NabuPodUserModel.init(propertyListRepresentation: filteredArray[0] as? Dictionary<String, Any?>)
+                return NabuPodUserModel.init(propertyListRepresentation: filteredArray[0] as? NSDictionary)
             
             }
             
@@ -298,26 +293,13 @@ public class NabuPodDataManager
         
         if let userInfoArray = getUserInfoArray()
         {
-           // let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "appId != %@", appId))
+            let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "appId != %@", appId))
             
-            let filteredArray = userInfoArray.filter{
-                if $0["appId"] as? String == appId
-                {
-                    return true
-                }
-            return false
-            }
             
-            for object in filteredArray
+            for(_, object) in filteredArray.enumerated()
             {
-                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as! Dictionary<String, Any?>)!)
-
+                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as! NSDictionary)!)
             }
-            
-//            for(_, object) in filteredArray.enumerated()
-//            {
-//                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as! Dictionary<String, Any?>)!)
-//            }
             
             
         }
@@ -332,26 +314,13 @@ public class NabuPodDataManager
 
         if let userInfoArray = getUserInfoArray()
         {
-           // let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "appId == %@", appId))
-            let filteredArray = userInfoArray.filter{
-                if $0["appId"] as? String == appId
-                {
-                    return true
-                }
-                return false
-
-            }
+            let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "appId == %@", appId))
             
-            for object in filteredArray
+            
+            for(_, object) in filteredArray.enumerated()
             {
-                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? Dictionary<String, Any?>)!)
+                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? NSDictionary)!)
             }
-            
-            
-//            for(_, object) in filteredArray.enumerated()
-//            {
-//                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? Dictionary<String, Any?>)!)
-//            }
             
             
         }
@@ -365,33 +334,13 @@ public class NabuPodDataManager
         
         if let userInfoArray = getUserInfoArray()
         {
+            let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "userId == %@", userId))
             
             
-            let filteredArray = userInfoArray.filter
+            for(_, object) in filteredArray.enumerated()
             {
-                if $0["userId"] as? String == userId
-                {
-                    return true
-                }
-                
-                return false
-
+                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? NSDictionary)!)
             }
-            
-            
-            //(NSPredicate(format: "userId == %@", userId))
-            
-            
-            
-            for object in filteredArray
-            {
-                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? Dictionary<String, Any?>)!)
-            }
-            
-//            for(_, object) in filteredArray.enumerated()
-//            {
-//                arrToReturn.append(NabuPodUserModel.init(propertyListRepresentation: object as? Dictionary<String, Any?>)!)
-//            }
             
             
         }
@@ -402,11 +351,11 @@ public class NabuPodDataManager
     }
     
     
-    class func getUserInfoArray() -> [[String : Any]]?
+    class func getUserInfoArray() -> NSMutableArray?
     {
         if let data = UICKeyChainStore.data(forKey: keyChainKey, service: keyChainService)
         {
-            return NSKeyedUnarchiver.unarchiveObject(with: data) as? [[String : Any]]
+             return NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray as! NSMutableArray?
 
         }
     
@@ -422,5 +371,13 @@ public class NabuPodDataManager
     }
     
     
-   
+    class func testMethod()
+    {
+        
+        UICKeyChainStore.setString("Test 2", forKey: "keyTem", service: "MyService")
+
+        
+        print("Yes it is working")
+        
+    }
 }

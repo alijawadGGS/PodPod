@@ -31,16 +31,18 @@ public struct NabuPodUserModel
     public init() {
     }
     
-    public init(data: Dictionary<String, Any?>?)
+    public init(data: NSDictionary?)
     {
         if let userData = data
         {
-            self.appId = userData["appId"]! as! String?
-//            self.token = userData.object(forKey: "token") as? String
-//            self.userId = userData.object(forKey: "userId") as? String
-//            self.userName = userData.object(forKey: "userName") as? String
-//            self.status = userData.object(forKey: "status") as? Bool
-//            self.lastLoginTime = userData.object(forKey: "lastLoginTime") as? NSDate
+           // userData.object(forKey: "appId") as? String
+            
+            self.appId = userData.object(forKey: "appId") as? String
+            self.token = userData.object(forKey: "token") as? String
+            self.userId = userData.object(forKey: "userId") as? String
+            self.userName = userData.object(forKey: "userName") as? String
+            self.status = userData.object(forKey: "status") as? Bool
+            self.lastLoginTime = userData.object(forKey: "lastLoginTime") as? NSDate
         }
     }
     
@@ -116,34 +118,34 @@ public struct NabuPodUserModel
 extension NabuPodUserModel : PropertyListReadable
 {
     
-    func propertyListRepresentation() -> Dictionary<String, Any?> {
+    func propertyListRepresentation() -> NSDictionary {
         
-        var representation = [String : Any?]()
+        var representation = [String : AnyObject]()
         if let appId = self.getAppId()  {
-            representation["appId"] = appId as Any?
+            representation["appId"] = appId as AnyObject?
         }
         if let token = self.getToken(){
-            representation["token"] = token as Any?
+            representation["token"] = token as AnyObject?
         }
         if let userId = self.getUserId(){
-            representation["userId"] = userId as Any?
+            representation["userId"] = userId as AnyObject?
         }
         if let userName = self.getUserName(){
-            representation["userName"] = userName as Any?
+            representation["userName"] = userName as AnyObject?
         }
         if let status = self.getStatus(){
-            representation["status"] = status as Any?
+            representation["status"] = status as AnyObject?
         }
         if let lastLoginTime = self.getLastLoginTime(){
-            representation["lastLoginTime"] = lastLoginTime as Any?
+            representation["lastLoginTime"] = lastLoginTime as AnyObject?
         }
 
         
-        return representation as Dictionary<String, Any?>
+        return representation as NSDictionary
     }
     
 
-    public init?(propertyListRepresentation:Dictionary<String, Any?>?) {
+    public init?(propertyListRepresentation:NSDictionary?) {
         
         guard let values = propertyListRepresentation
             else {return nil}
