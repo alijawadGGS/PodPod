@@ -13,7 +13,7 @@ public class NabuPodDataManager
     
     static let keyChainService = "NabuCircleService"
     static let keyChainKey = "NabuCircleService"
-
+    
     //MARK: Exposed Methods
     
     
@@ -54,10 +54,10 @@ public class NabuPodDataManager
                 }
                 
                 return sortedAppSpecificUsers[0]
-
+                
             }
             
-                }
+        }
         else if appSpecificUsers.count == 1
         {
             return appSpecificUsers[0]
@@ -66,7 +66,7 @@ public class NabuPodDataManager
         {
             // return most recent user
             
-           let sortedAppSpecificUsers =  appSpecificUsers.sorted {
+            let sortedAppSpecificUsers =  appSpecificUsers.sorted {
                 item1, item2 in
                 let date1 = item1.getLastLoginTime() ?? NSDate()
                 let date2 = item2.getLastLoginTime() ?? NSDate()
@@ -76,9 +76,9 @@ public class NabuPodDataManager
             
             return sortedAppSpecificUsers[0]
             
-        
+            
         }
-    
+        
     }
     
     
@@ -118,7 +118,7 @@ public class NabuPodDataManager
             
             if let userExists = getUserInApp(userId: unrUserInfo.getUserId() ?? "", appId: unrUserInfo.getAppId() ?? "")
             {
-                    updateUser(userId: unrUserInfo.getUserId() ?? "", appId: unrUserInfo.getAppId() ?? "", userInfo: userExists)
+                updateUser(userId: unrUserInfo.getUserId() ?? "", appId: unrUserInfo.getAppId() ?? "", userInfo: userExists)
             }
             else
             {
@@ -134,65 +134,65 @@ public class NabuPodDataManager
     
     public class func removeUser(userId : String, appId : String)
     {
-    
         
-            if let data = UICKeyChainStore.data(forKey: keyChainKey, service: keyChainService)
+        
+        if let data = UICKeyChainStore.data(forKey: keyChainKey, service: keyChainService)
+        {
+            let userInfoArray = NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray as! NSMutableArray?
+            
+            if userInfoArray != nil
             {
-                let userInfoArray = NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray as! NSMutableArray?
                 
-                if userInfoArray != nil
+                if userInfoArray!.count > 0
                 {
                     
-                    if userInfoArray!.count > 0
-                    {
+                    
+                    for index in stride(from: userInfoArray!.count - 1, to: -1, by: -1) {
+                        //print(index)
                         
                         
-                        for index in stride(from: userInfoArray!.count - 1, to: -1, by: -1) {
-                            //print(index)
+                        if index < userInfoArray!.count
+                        {
+                            let dictionary = userInfoArray![index] as! NSDictionary
                             
+                            let userInfoStruct = NabuPodUserModel.init(propertyListRepresentation: dictionary)
                             
-                            if index < userInfoArray!.count
+                            if userInfoStruct?.getUserId() == userId && userInfoStruct?.getAppId() == appId
                             {
-                                let dictionary = userInfoArray![index] as! NSDictionary
                                 
-                                let userInfoStruct = NabuPodUserModel.init(propertyListRepresentation: dictionary)
+                                let newDiction = userInfoStruct?.propertyListRepresentation()
                                 
-                                if userInfoStruct?.getUserId() == userId && userInfoStruct?.getAppId() == appId
+                                if newDiction != nil
                                 {
                                     
-                                    let newDiction = userInfoStruct?.propertyListRepresentation()
-                                    
-                                    if newDiction != nil
-                                    {
-                                        
-                                        userInfoArray?.remove(newDiction!)
-                                    }
-                                    
+                                    userInfoArray?.remove(newDiction!)
                                 }
+                                
                             }
-                            
-                            
                         }
                         
-//                        for index in userInfoArray!.count - 1 ...  {
-//                            
-//                           
-//                            
-//                        }
                         
-                        
-                        saveUserInfoArray(array: userInfoArray!)
-                    
                     }
                     
+                    //                        for index in userInfoArray!.count - 1 ...  {
+                    //
+                    //
+                    //
+                    //                        }
+                    
+                    
+                    saveUserInfoArray(array: userInfoArray!)
                     
                 }
-                
                 
                 
             }
             
             
+            
+        }
+        
+        
     }
     
     
@@ -211,14 +211,14 @@ public class NabuPodDataManager
         }
         else
         {
-        
+            
             let array : NSArray = [userInfo.propertyListRepresentation()]
             
             saveUserInfoArray(array: array)
-
+            
         }
         
-
+        
     }
     
     
@@ -226,7 +226,7 @@ public class NabuPodDataManager
     {
         if let data = UICKeyChainStore.data(forKey: keyChainKey, service: keyChainService)
         {
-            let userInfoArray = NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray as! NSMutableArray?
+            let userInfoArray = (NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray)?.mutableCopy() as! NSMutableArray?
             
             if userInfoArray != nil
             {
@@ -234,7 +234,7 @@ public class NabuPodDataManager
                     
                     let dictionary = userInfoArray![index] as! NSDictionary
                     
-                   var userInfoStruct = NabuPodUserModel.init(propertyListRepresentation: dictionary)
+                    var userInfoStruct = NabuPodUserModel.init(propertyListRepresentation: dictionary)
                     
                     if userInfoStruct?.getUserId() == userId && userInfoStruct?.getAppId() == appId
                     {
@@ -248,7 +248,7 @@ public class NabuPodDataManager
                         if newDiction != nil
                         {
                             userInfoArray?.replaceObject(at: index, with: newDiction!)
-
+                            
                         }
                         
                         
@@ -260,13 +260,13 @@ public class NabuPodDataManager
                 saveUserInfoArray(array: userInfoArray!)
             }
             
-           
+            
             
         }
     }
     
     
-     class func getUserInApp(userId : String, appId : String) -> NabuPodUserModel?
+    class func getUserInApp(userId : String, appId : String) -> NabuPodUserModel?
     {
         if let userInfoArray = getUserInfoArray()
         {
@@ -277,18 +277,18 @@ public class NabuPodDataManager
                 
                 
                 return NabuPodUserModel.init(propertyListRepresentation: filteredArray[0] as? NSDictionary)
-            
+                
             }
             
         }
         
-             return nil
+        return nil
     }
     
     
     class func getAllUsersExceptApp(appId : String) ->[NabuPodUserModel]
     { // returns all users in app other than appId
-    
+        
         var arrToReturn = [NabuPodUserModel]()
         
         if let userInfoArray = getUserInfoArray()
@@ -309,9 +309,9 @@ public class NabuPodDataManager
     
     class func getAllUsersInApp(appId : String) -> [NabuPodUserModel]
     {
-    
+        
         var arrToReturn = [NabuPodUserModel]()
-
+        
         if let userInfoArray = getUserInfoArray()
         {
             let filteredArray = userInfoArray.filtered(using: NSPredicate(format: "appId == %@", appId))
@@ -346,8 +346,8 @@ public class NabuPodDataManager
         }
         
         return arrToReturn
-
-    
+        
+        
     }
     
     
@@ -355,10 +355,10 @@ public class NabuPodDataManager
     {
         if let data = UICKeyChainStore.data(forKey: keyChainKey, service: keyChainService)
         {
-             return NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray as! NSMutableArray?
-
+            return (NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray)?.mutableCopy() as! NSMutableArray?
+            
         }
-    
+        
         return nil
     }
     
@@ -366,7 +366,7 @@ public class NabuPodDataManager
     class func saveUserInfoArray(array : NSArray)
     {
         let archivedUserData = NSKeyedArchiver.archivedData(withRootObject: array)
-
+        
         UICKeyChainStore.setData(archivedUserData, forKey: keyChainKey, service: keyChainService)
     }
     
@@ -375,7 +375,7 @@ public class NabuPodDataManager
     {
         
         UICKeyChainStore.setString("Test 2", forKey: "keyTem", service: "MyService")
-
+        
         
         print("Yes it is working")
         
