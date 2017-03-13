@@ -116,7 +116,7 @@ public class NabuPodDataManager
         {
             // check if user already exists in given app
             
-            if let userExists = getUserInApp(userId: unrUserInfo.getUserId() ?? "", appId: unrUserInfo.getAppId() ?? "")
+            if let _ = getUserInApp(userId: unrUserInfo.getUserId() ?? "", appId: unrUserInfo.getAppId() ?? "")
             {
                 updateUser(userId: unrUserInfo.getUserId() ?? "", appId: unrUserInfo.getAppId() ?? "", userInfo: unrUserInfo)
             }
