@@ -118,7 +118,7 @@ public class NabuPodDataManager
             
             if let userExists = getUserInApp(userId: unrUserInfo.getUserId() ?? "", appId: unrUserInfo.getAppId() ?? "")
             {
-                updateUser(userId: unrUserInfo.getUserId() ?? "", appId: unrUserInfo.getAppId() ?? "", userInfo: userExists)
+                updateUser(userId: unrUserInfo.getUserId() ?? "", appId: unrUserInfo.getAppId() ?? "", userInfo: unrUserInfo)
             }
             else
             {
