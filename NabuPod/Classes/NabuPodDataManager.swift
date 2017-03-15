@@ -132,6 +132,13 @@ public class NabuPodDataManager
     }
     
     
+    public class func removeAllUsers()
+    {
+        
+        saveUserInfoArray(array: NSMutableArray())
+
+    }
+    
     public class func removeUser(userId : String, appId : String)
     {
         
@@ -148,7 +155,6 @@ public class NabuPodDataManager
                     
                     
                     for index in stride(from: userInfoArray!.count - 1, to: -1, by: -1) {
-                        //print(index)
                         
                         
                         if index < userInfoArray!.count
@@ -174,11 +180,7 @@ public class NabuPodDataManager
                         
                     }
                     
-                    //                        for index in userInfoArray!.count - 1 ...  {
-                    //
-                    //
-                    //
-                    //                        }
+}
                     
                     
                     saveUserInfoArray(array: userInfoArray!)
