@@ -131,6 +131,56 @@ public class NabuPodDataManager
         }
     }
     
+    public class func removeUsersForId(appId : String){
+        
+        if let data = UICKeyChainStore.data(forKey: keyChainKey, service: keyChainService)
+        {
+            let userInfoArray = NSKeyedUnarchiver.unarchiveObject(with: data) as? NSArray as! NSMutableArray?
+            
+            if userInfoArray != nil {
+                
+                if userInfoArray!.count > 0 {
+                    
+                    
+                    for index in stride(from: userInfoArray!.count - 1, to: -1, by: -1) {
+                        
+                        
+                        if index < userInfoArray!.count {
+                            let dictionary = userInfoArray![index] as! NSDictionary
+                            
+                            let userInfoStruct = NabuPodUserModel.init(propertyListRepresentation: dictionary)
+                            
+                            if userInfoStruct?.getAppId() == appId
+                            {
+                                
+                                let newDiction = userInfoStruct?.propertyListRepresentation()
+                                
+                                if newDiction != nil
+                                {
+                                    
+                                    userInfoArray?.remove(newDiction!)
+                                }
+                                
+                            }
+                        }
+                        
+                        
+                    }
+                    
+                    
+                    
+                    saveUserInfoArray(array: userInfoArray!)
+                    
+                }
+                
+                
+            }
+            
+            
+            
+        }
+    
+    }
     
     public class func removeAllUsers()
     {
@@ -180,11 +230,6 @@ public class NabuPodDataManager
                         
                     }
                     
-                    //                        for index in userInfoArray!.count - 1 ...  {
-                    //
-                    //
-                    //
-                    //                        }
                     
                     
                     saveUserInfoArray(array: userInfoArray!)
