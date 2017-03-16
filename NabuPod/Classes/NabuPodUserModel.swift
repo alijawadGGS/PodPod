@@ -6,20 +6,9 @@
 //
 //
 
-/*
- private String appId;
- private String token;
- private String userId;
- private String userName;
- private boolean status;
- private long lastLoginTime;
- 
- */
-
 import Foundation
 
-public struct NabuPodUserModel
-{
+public struct NabuPodUserModel {
     private var appId : String? = ""
     private var token : String? = ""
     private var userId : String? = ""
@@ -27,15 +16,11 @@ public struct NabuPodUserModel
     private var status : Bool? = true
     private var lastLoginTime : NSDate? = NSDate()
     
-    
     public init() {
     }
     
-    public init(data: NSDictionary?)
-    {
-        if let userData = data
-        {
-           // userData.object(forKey: "appId") as? String
+    public init(data: NSDictionary?) {
+        if let userData = data {
             
             self.appId = userData.object(forKey: "appId") as? String
             self.token = userData.object(forKey: "token") as? String
@@ -46,81 +31,67 @@ public struct NabuPodUserModel
         }
     }
     
-    
     //MARK: Setters
     
-    mutating func setAppId(appId_ : String?)
-    {
+    mutating func setAppId(appId_ : String?) {
         appId = appId_
     }
     
-    mutating func setToken(token_ : String?)
-    {
+    mutating func setToken(token_ : String?) {
         token = token_
     }
     
-    mutating func setUserId(userId_ : String?)
-    {
+    mutating func setUserId(userId_ : String?) {
         userId = userId_
     }
     
-    mutating func setUserName(userName_ : String?)
-    {
+    mutating func setUserName(userName_ : String?) {
         userName = userName_
     }
     
-    mutating func setStatus(status_ : Bool?)
-    {
+    mutating func setStatus(status_ : Bool?) {
         status = status_
     }
     
-    mutating func setLastLoginTime(lastLoginTime_ : NSDate?)
-    {
+    mutating func setLastLoginTime(lastLoginTime_ : NSDate?) {
         lastLoginTime = lastLoginTime_
     }
     
-    
     //MARK: Getters
     
-    public func getAppId() -> String?
-    {
+    public func getAppId() -> String? {
         return appId
     }
     
-    public func getToken() -> String?
-    {
+    public func getToken() -> String? {
         return token
     }
     
-    public func getUserId() -> String?
-    {
+    public func getUserId() -> String? {
         return userId
     }
-
-    public func getUserName() -> String?
-    {
+    
+    public func getUserName() -> String? {
         return userName
     }
-
-    public func getStatus() -> Bool?
-    {
+    
+    public func getStatus() -> Bool? {
         return status
     }
-
-    public func getLastLoginTime() -> NSDate?
-    {
+    
+    public func getLastLoginTime() -> NSDate? {
         return lastLoginTime
     }
-
-
+    
+    
 }
 
-extension NabuPodUserModel : PropertyListReadable
-{
+extension NabuPodUserModel : PropertyListReadable {
     
     func propertyListRepresentation() -> NSDictionary {
         
         var representation = [String : AnyObject]()
+        
         if let appId = self.getAppId()  {
             representation["appId"] = appId as AnyObject?
         }
@@ -139,16 +110,17 @@ extension NabuPodUserModel : PropertyListReadable
         if let lastLoginTime = self.getLastLoginTime(){
             representation["lastLoginTime"] = lastLoginTime as AnyObject?
         }
-
+        
         
         return representation as NSDictionary
     }
     
-
+    
     public init?(propertyListRepresentation:NSDictionary?) {
         
         guard let values = propertyListRepresentation
             else {return nil}
+        
         self =  NabuPodUserModel(data: values)
     }
 }
